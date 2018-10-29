@@ -2,15 +2,15 @@ Runtime
 -------
 
 1. Runtime for does_string_contain_letter:
-
+constant
 
 
 2. Runtime for duplicate_letters:
-
+O(n^2)
 
 
 3. Runtime for duplicate_letters2:
-
+O(n)
 
 
 Stacks and Queues
