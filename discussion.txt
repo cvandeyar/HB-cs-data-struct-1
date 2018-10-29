@@ -21,16 +21,13 @@ Stacks and Queues
    a built-in Python list? Explain why, referencing the runtime requirements for
    Stack operations (push, pop, etc).
 
-
-
-
-
+linked list is better because can keep track of exact order of how things are added/removed. Runtime O(1)
 
 2. Which would be a better data structure for creating a Queue: a Linked List or
    a built-in Python list? Explain why, referencing the runtime requirements for
    Queue methods (enqueue, dequeue, etc).
 
-
+Linked list because it has a better run time than a regular list when it comes to removing from the front. runtime is O(n).
 
 Trees
 -----
@@ -39,10 +36,34 @@ Trees
    Search (BFS) algorithm visit each node  until finding burritos (starting at
    food)?
 
+[food]
+[Italian, Indian, Mexican]
+[Indian, Mexican, Lasagna, pizza]
+[Mexican, lasagna, pizza, tikka Masala, saag]
+[lasagna, pizza, tikka tasala, saag, burritos, tacos, enchilads]
+[pizza, tikka masala, saag, burritos, tacos, enchilads]
+[tikka masala, saag, burritos, tacos, enchilads, thin crust, Chicago-style, New York-style, Sicilian]
+[saag, burritos, tacos, enchilads, thin crust, Chicago-style, New York-style, Sicilian]
+[burritos, tacos, enchilads, thin crust, Chicago-style, New York-style, Sicilian]
+pop(burritos)!!!
 
 2. Using the diagram in the instructions, In what order would a Depth First 
    Search (DFS) algorithm visit each node until finding Chicago-style (starting
    at food)? 
+
+[food]
+[Italian, Indian, Mexican]
+[Italian, Indian, burritos, tacos]
+[Italian, Indian, burritos]
+[Italian, Indian]
+[Italian, tikka masala, saag]
+[Italian, tikka masala]
+[Italian]
+[lasagna, pizza]
+[lasagna, thin crust, Chicago-style, New York-style, Sicilian]
+[lasagna, thin crust, Chicago-style, New York-style]
+[lasagna, thin crust, Chicago-style]
+pop(Chicago-style)!!!
 
 3. How is a binary search tree different from other trees?
 
