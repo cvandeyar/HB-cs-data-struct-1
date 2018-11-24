@@ -21,13 +21,13 @@ Stacks and Queues
    a built-in Python list? Explain why, referencing the runtime requirements for
    Stack operations (push, pop, etc).
 
-linked list is better because can keep track of exact order of how things are added/removed. Runtime O(1)
+Linked list is better to use as a stack. Runtime is O(1). You can set up your linked list so that you're only allowed to remove or add items from the end of the list. 
 
 2. Which would be a better data structure for creating a Queue: a Linked List or
    a built-in Python list? Explain why, referencing the runtime requirements for
    Queue methods (enqueue, dequeue, etc).
 
-Linked list because it has a better run time than a regular list when it comes to removing from the front. runtime is O(n).
+Linked list is better. A queue made with a doubly-linked list has a runtime of O(1) when adding or removing an item from the beginning or end of the list. A regular list has a runtime of O(n) when removing an item from the list. 
 
 Trees
 -----
@@ -67,5 +67,6 @@ pop(Chicago-style)!!!
 
 3. How is a binary search tree different from other trees?
 
+Binary search trees have a left and right nodes instead of single to multiple children.
 
 

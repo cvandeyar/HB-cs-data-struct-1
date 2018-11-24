@@ -47,9 +47,23 @@ class Tree(object):
 
         """
 
-        # TODO: Complete this function
+        new_lst = []
 
-        pass
+        current = self
+
+        while current:
+
+            if current.data == data:
+                new_lst.append(current.data)
+
+            elif data < current.data:
+                current = current.left
+
+            elif data > current.data:
+                current = current.right
+
+        reutrn new_lst
+        
 
 
 if __name__ == "__main__":

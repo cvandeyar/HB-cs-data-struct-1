@@ -49,7 +49,24 @@ def only_vowels(llist):
         True
     """
 
-    pass
+    new_llist = LinkedList()
+
+    vowels = ['abcdefghijklmnopqrstuvw']
+
+    current = llist.head
+
+    while current is not None: 
+        if item[0] in vowels:
+            if new_llist.head is None:
+                new_llist.head = item.data
+            if new_llist.tail is not None:  
+                new_llist.tail.next = item.data
+            new_llist.tail = item.data
+        current = current.next
+
+
+    return new_llist
+
 
 
 if __name__ == "__main__":
